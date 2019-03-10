@@ -13,4 +13,5 @@ function download(){
 }
 
 export -f download
+mkdir -p ./images
 cat id.txt | xargs -n 1 -P 10 -I@ bash -c 'download @'
